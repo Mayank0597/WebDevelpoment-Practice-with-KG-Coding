@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function checkNum(num){
+            if(num%2==0){
+                console.log('Number is even');
+            }
+            if(num%2!=0){
+                console.log('Number is odd');
+            }
+        }
+        checkNum(2);
+        checkNum(3);
+
+        function largerNum(num1,num2){
+            if(num1>num2){
+                return num1;
+            }else{
+                return num2;
+            }
+        }
+        let result = largerNum(5,6);
+        console.log(`Larger number is ${result}`);
+
+        
+        
+        function convertCtoF(c){
+           let f=(9/5)*c+32;
+            return f;
+        }
+        let f = convertCtoF(27);
+        console.log(`Degree in Fahrenheit is ${f}`);
+        
+    </script>
+</body>
+</html>
